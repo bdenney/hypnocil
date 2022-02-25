@@ -11,7 +11,6 @@ function Header({onSearch}) {
     return(
         <header>
             <h1>Hypnocil™️ Clinical Trials</h1>
-            
             <input id="search" type="text" onChange={handleChange} placeholder="Search..."></input>
         </header>
     );

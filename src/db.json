@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Nancy Thompson",
+            "deceased": false,
             "side_effects": [
                 "Dizziness",
                 "Nausea",
@@ -13,6 +14,7 @@
         {
             "id": 2,
             "name": "Kristen Parker",
+            "deceased": false,
             "side_effects":[
                 "Headache",
                 "Severe Allergic Reaction"
@@ -21,6 +23,7 @@
         {
             "id": 3,
             "name": "Joey Crusel",
+            "deceased": false,
             "side_effects":[
                 "Nausea",
                 "Loss of Memory"
@@ -29,6 +32,7 @@
         {
             "id": 4,
             "name": "Elaine Parker",
+            "deceased": false,
             "side_effects":[
                 "Dizziness",
                 "Headache",
@@ -38,6 +42,7 @@
         {
             "id": 5,
             "name": "Will Stanton",
+            "deceased": true,
             "side_effects":[
                 "Severe Allergic Reaction",
                 "Loss of Memory"
@@ -46,6 +51,7 @@
         {
             "id": 6,
             "name": "Jennifer Caulfield",
+            "deceased": true,
             "side_effects":[
                 "Headache",
                 "Nausea",
@@ -55,6 +61,7 @@
         {
             "id": 7,
             "name": "Taryn White",
+            "deceased": false,
             "side_effects":[
                 "Dizziness",
                 "Somnambulism",
