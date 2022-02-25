@@ -3,7 +3,7 @@ import React from "react"
 function Header() {
     return(
         <header>
-            <h1>Hynocil™️ Clinical Trials</h1>
+            <h1>Hypnocil™️ Clinical Trials</h1>
         </header>
     );
 }
