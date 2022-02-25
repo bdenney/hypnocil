@@ -1,3 +1,60 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Serif', serif;
+    color: #eeeeff;
+}
+
+body {
+    background-color: #0d1b2a;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+}
+
+header img {
+    display:block;
+    width:25%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:-6%;
+}
+
+header input[type=text] {
+    width: 30%;
+    height:3em;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    gap: .5em;
+    border: 1px solid #eeeeff;
+    border-radius:4px;
+    width:20%;
+    padding:1em;
+}
+
+table {
+    border: 1px solid #eeeeff;
+    width:60%;
+}
+
 .deceased {
     
 }
