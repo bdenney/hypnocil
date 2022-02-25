@@ -1,0 +1,65 @@
+{
+    "patients" : [
+        {
+            "id": 1,
+            "name": "Nancy Thompson",
+            "side_effects": [
+                "Dizziness",
+                "Nausea",
+                "Somnambulism",
+                "Loss of Memory"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Kristen Parker",
+            "side_effects":[
+                "Headache",
+                "Severe Allergic Reaction"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Joey Crusel",
+            "side_effects":[
+                "Nausea",
+                "Loss of Memory"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Elaine Parker",
+            "side_effects":[
+                "Dizziness",
+                "Headache",
+                "Nausea"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Will Stanton",
+            "side_effects":[
+                "Severe Allergic Reaction",
+                "Loss of Memory"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Jennifer Caulfield",
+            "side_effects":[
+                "Headache",
+                "Nausea",
+                "Somnambulism"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Taryn White",
+            "side_effects":[
+                "Dizziness",
+                "Somnambulism",
+                "Loss of Memory"
+            ]
+        }
+    ]
+}
