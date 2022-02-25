@@ -12,12 +12,12 @@ function PatientList({patients}) {
                 <th>Patient Name</th>
                 <th>Noted Side Effects</th>
             </tr>
-          </tbody>
-          {
+            {
               patients.map(patient => {
-                  return <Patient patient={patient}/>
+                  return <Patient key={patient.id} patient={patient}/>
               })
-          }
+            }
+          </tbody>
       </table> 
     )
 }

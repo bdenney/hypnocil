@@ -16,11 +16,26 @@ function App() {
     });
   }, [])
 
+  function handleNewPatient(patient) {
+    fetch('http://localhost:3000/patients', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(patient)
+    })
+    .then(response => response.json())
+    .then(json => { 
+      setPatients([...patients, json]);
+    })
+    .catch(err => console.error(err))
+  }
+
   return (
     <div className="root">
       <Header/>
       <PatientList patients={patients}/>
-      <NewPatientForm />
+      <NewPatientForm onNewPatient={handleNewPatient}/>
     </div>
   );
 }

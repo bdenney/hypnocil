@@ -1,10 +1,28 @@
 import React from "react"
 
-function NewPatientForm() {
+function NewPatientForm({onNewPatient}) {
+
+    function handleFormSubmit(event) {
+        event.preventDefault();
+
+        const selectElement = event.target["side-effects"];
+
+        const patient = {
+            name: event.target["name"].value,
+            side_effects: [
+                selectElement.options[selectElement.selectedIndex].text
+            ]
+        };
+
+        onNewPatient(patient);
+
+        event.target.reset();
+    }
+
     return(
         <>
-            <form id="new-patient-form">
-                <input type="text" placeholder="Patient Name" />
+            <form id="new-patient-form" onSubmit={handleFormSubmit}>
+                <input id="name" type="text" placeholder="Patient Name" />
                 <select name="side-effects" id="side-effects" form="new-patient-form">
                     <option value="dizziness">Dizziness</option>
                     <option value="nausea">Nausea</option>
