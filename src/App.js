@@ -4,7 +4,7 @@ import PatientList from './components/PatientList';
 
 function App() {
   return (
-    <div class="root">
+    <div className="root">
       <Header/>
       <PatientList />
     </div>

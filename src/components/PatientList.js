@@ -3,13 +3,15 @@ import React from "react"
 function PatientList() {
     return(
       <table>
-          <thead>
-              <th></th>
-              <th>Patient ID</th>
-              <th>Patient Name</th>
-              <th>Noted Side Effects</th>
-          </thead>
-          {/* Create <Patient/> components here. */}
+          <tbody>
+            <tr>
+                <th></th>
+                <th>Patient ID</th>
+                <th>Patient Name</th>
+                <th>Noted Side Effects</th>
+            </tr>
+            {/* Create <Patient/> components here. */}
+          </tbody>
       </table>  
     );
 }
