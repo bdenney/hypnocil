@@ -21,7 +21,6 @@ function App() {
       <Header/>
       <PatientList patients={patients}/>
       <NewPatientForm />
-      <PatientList />
     </div>
   );
 }
