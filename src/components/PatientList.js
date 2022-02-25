@@ -1,7 +1,9 @@
 import React from "react"
+import Patient from "./Patient"
 
-function PatientList() {
-    return(
+function PatientList({patients}) {
+
+    return (
       <table>
           <tbody>
             <tr>
@@ -10,10 +12,14 @@ function PatientList() {
                 <th>Patient Name</th>
                 <th>Noted Side Effects</th>
             </tr>
-            {/* Create <Patient/> components here. */}
           </tbody>
-      </table>  
-    );
+          {
+              patients.map(patient => {
+                  return <Patient patient={patient}/>
+              })
+          }
+      </table> 
+    )
 }
 
 export default PatientList;
