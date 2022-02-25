@@ -1,13 +1,18 @@
 import React from "react"
 
-function Header() {
+function Header({onSearch}) {
+
+    function handleChange(event) {
+        event.preventDefault();
+        const searchText = event.target.value;
+        onSearch(searchText);
+    }
+
     return(
         <header>
             <h1>Hypnocil™️ Clinical Trials</h1>
-            <form>
-                <input id="search" type="text"></input>
-                <input type="submit" value="Search"></input>
-            </form>
+            
+            <input id="search" type="text" onChange={handleChange} placeholder="Search..."></input>
         </header>
     );
 }

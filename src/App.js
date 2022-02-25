@@ -7,6 +7,7 @@ import PatientList from './components/PatientList';
 function App() {
 
   const [patients, setPatients] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     fetch('http://localhost:3000/patients')
@@ -31,10 +32,24 @@ function App() {
     .catch(err => console.error(err))
   }
 
+  function handleSearch(searchText) {
+    setSearchText(searchText);
+  }
+
+  const filteredPatientData = patients.filter((patient) => {
+
+    const upperSearchText = searchText.toUpperCase();
+
+    return patient.name.toUpperCase().includes(upperSearchText) 
+          || patient.side_effects.find(sideEffect => {
+              return sideEffect.toUpperCase().includes(upperSearchText);
+             });
+  });
+
   return (
     <div className="root">
-      <Header/>
-      <PatientList patients={patients}/>
+      <Header onSearch={handleSearch}/>
+      <PatientList patients={filteredPatientData}/>
       <NewPatientForm onNewPatient={handleNewPatient}/>
     </div>
   );
