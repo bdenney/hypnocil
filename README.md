@@ -31,10 +31,17 @@ The base URL for your backend is: `http://localhost:3000`.
 As a user, I should be able to:
 
 - See all patients and patient data in the table when the page loads
-- Create a new patient with a given side effect. This patient should persist through refreshes.
+- Create a new patient with a given side effect. This patient should persist in your backend.
 - You should be able to the table by typing the search box. The filter should work on both the name and the side effects.
-- Clicking the delete button should remove the patient from the page. This change should persist through refreshes.
+- Clicking the delete button should remove the patient from the page. This should also remove the patient from the backend.
 - Create some visual indicator of whether a patient is alive or deceased.
+
+## Bonus Deliverables
+
+- Create a way to add a side effect to each patient. These should persist in the backend.
+- Create a way to mark a patient 'deceased'. This should persist in the backend.
+- Create a way to add multuple side effects when creating a new patient.
+
 ### Example Response:
 
 ```json
