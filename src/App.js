@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="root">
       <Header/>
-      <div class="content">
+      <div className="content">
         <NewPatientForm />
         <PatientList />
       </div>
