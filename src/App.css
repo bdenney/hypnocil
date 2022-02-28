@@ -50,6 +50,7 @@ header input[type=text] {
     border-radius: 4px;
     color:#eeeeff;
     margin-top:1%;
+    padding:.5rem;
 }
 
 header h1 {
@@ -70,6 +71,7 @@ form {
 
 table {
     border: 1px solid #0D1B2A;
+    border-radius:4px;
     padding:.5em;
     width:60%;
 }
