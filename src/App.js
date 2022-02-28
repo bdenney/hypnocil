@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="root">
       <Header onSearch={handleSearch}/>
-      <div class="content">
+      <div className="content">
         <PatientList patients={filteredPatientData}/>
         <NewPatientForm onNewPatient={handleNewPatient}/>
       </div>
