@@ -1,3 +1,5 @@
+/* Palette: https://coolors.co/528976-ffe184-7d80da-eeeeff-0d1b2a */
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -68,6 +70,7 @@ form {
 
 table {
     border: 1px solid #0D1B2A;
+    padding:.5em;
     width:60%;
 }
 
