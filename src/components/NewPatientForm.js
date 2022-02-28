@@ -22,7 +22,7 @@ function NewPatientForm({onNewPatient}) {
     return(
         <>
             <form id="new-patient-form" onSubmit={handleFormSubmit}>
-                <input id="name" type="text" placeholder="Patient Name" />
+                <input id="patient-name" type="text" placeholder="Patient Name" />
                 <select name="side-effects" id="side-effects" form="new-patient-form">
                     <option value="dizziness">Dizziness</option>
                     <option value="nausea">Nausea</option>

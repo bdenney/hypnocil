@@ -10,8 +10,10 @@ function Header({onSearch}) {
 
     return(
         <header>
-            <img src="./images/hypnocil-logo.png"/>
-            <h1>Hypnocil™️ Clinical Trials</h1>
+            <div>
+                <img src="./images/hypnocil-logo.png"/>
+                <h1>Clinical Trials</h1>
+            </div>
             <input id="search" type="text" onChange={handleChange} placeholder="Search..."></input>
         </header>
     );
