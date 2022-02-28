@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Hypnocil Clinical Trials
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TODO: Image
 
-## Available Scripts
+You've recently been hired as a new physician's assistant at Westin Hills Psychiatric Hospital. They've been running clinical trials on a new drug called Hypnocil. The patients are adolescents that are suffering extreme and troubling nightmares of a severely burned man wearing a red and green sweater with long knives as claws.
 
-In the project directory, you can run:
+Having been through Flatiron School you've been tasked with creating a web portal to track any side effects being experienced by the patients.
 
-### `npm start`
+_FDA CLASSIFICATION: Experimental. Effective for management of psychotic disorders. For sedation where dreamless sleep is considered optimal; suppression of night terror._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For this project, you’ll be building out a React application that displays a
+list of patients. Try your best to find the right places to insert code into the established code base.
 
-### `npm test`
+Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+1. Run `npm install` in your terminal.
+2. Run `json-server --watch src/db.json`. This will run your backend on port `3000`.
+3. In a new terminal, run `npm start`. This will run your React app on port `3001`. You may be asked whether you want to run react on another port. Type 'y' and it should open the page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Make sure to open [http://localhost:3000/patients](http://localhost:3000/patients) in the browser to verify that your backend is working before you proceed!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The base URL for your backend is: `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Core Deliverables
 
-### `npm run eject`
+As a user, I should be able to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- See all patients and patient data in the table when the page loads
+- Create a new patient with a given side effect. This patient should persist through refreshes.
+- You should be able to the table by typing the search box. The filter should work on both the name and the side effects.
+- Clicking the delete button should remove the patient from the page. This change should persist through refreshes.
+- Create some visual indicator of whether a patient is alive or deceased.
+### Example Response:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+[
+  {
+    "id": 1,
+    "name": "Nancy Thompson",
+    "deceased": false,
+    "side_effects": [
+      "Dizziness",
+      "Nausea",
+      "Somnambulism",
+      "Loss of Memory"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Kristen Parker",
+    "deceased": false,
+    "side_effects": [
+      "Headache",
+      "Severe Allergic Reaction"
+    ]
+  }
+]
+```
