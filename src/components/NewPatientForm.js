@@ -8,7 +8,7 @@ function NewPatientForm({onNewPatient}) {
         const selectElement = event.target["side-effects"];
 
         const patient = {
-            name: event.target["name"].value,
+            name: event.target["patient-name"].value,
             side_effects: [
                 selectElement.options[selectElement.selectedIndex].text
             ]
