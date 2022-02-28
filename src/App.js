@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="root">
       <Header/>
-      <NewPatientForm />
-      <PatientList />
+      <div class="content">
+        <NewPatientForm />
+        <PatientList />
+      </div>
     </div>
   );
 }

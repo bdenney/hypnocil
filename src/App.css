@@ -19,6 +19,7 @@ body {
 header {
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 header img {
@@ -33,6 +34,11 @@ header img {
 header input[type=text] {
     width: 30%;
     height:3em;
+    font-size: 1.25em;
+    background: none;
+    border:1px solid #eeeeff;
+    border-radius: 4px;
+    color:#eeeeff;
 }
 
 header h1 {
@@ -53,6 +59,13 @@ form {
 table {
     border: 1px solid #eeeeff;
     width:60%;
+}
+
+.content {
+    display:flex;
+    gap:3em;
+    align-items:baseline;
+    justify-content: center;
 }
 
 .deceased {
