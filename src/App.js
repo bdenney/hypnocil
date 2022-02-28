@@ -50,8 +50,8 @@ function App() {
     <div className="root">
       <Header onSearch={handleSearch}/>
       <div className="content">
-        <PatientList patients={filteredPatientData}/>
         <NewPatientForm onNewPatient={handleNewPatient}/>
+        <PatientList patients={filteredPatientData}/>
       </div>
     </div>
   );
