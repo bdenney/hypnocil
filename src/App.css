@@ -2,11 +2,11 @@ html, body {
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Serif', serif;
-    color: #eeeeff;
+    color: #0D1B2A;
 }
 
 body {
-    background-color: #0d1b2a;
+    background-color: #eeeeff;
 }
 
 .root {
@@ -19,45 +19,55 @@ body {
 header {
     display:flex;
     flex-direction: column;
+    gap:2%;
     align-items: center;
+    background-color: #0D1B2A;
+    color: #eeeeff;
+    padding: 2%;
+}
+
+header div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
 }
 
 header img {
     display:block;
-    width:25%;
+    width:30%;
     height:auto;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:-6%;
 }
 
 header input[type=text] {
-    width: 30%;
+    width: 50%;
     height:3em;
     font-size: 1.25em;
     background: none;
     border:1px solid #eeeeff;
     border-radius: 4px;
     color:#eeeeff;
+    margin-top:1%;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 3rem;
+    font-size: 2.0rem;
+    margin-top: 10%;
+    margin-bottom: 0%;
 }
 
 form {
     display:flex;
     flex-direction: column;
     gap: .5em;
-    border: 1px solid #eeeeff;
+    border: 1px solid #0D1B2A;
     border-radius:4px;
     width:20%;
     padding:1em;
 }
 
 table {
-    border: 1px solid #eeeeff;
+    border: 1px solid #0D1B2A;
     width:60%;
 }
 
