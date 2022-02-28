@@ -10,9 +10,13 @@ function Patient({patient}) {
         }
     });
 
+    function handleDeleteClick(event) {
+        // TODO: Delete the patient.
+    }
+
     return(
         <tr className="">
-            <td><button>Delete</button></td>
+            <td><button onClick={handleDeleteClick}>Delete</button></td>
             <td>{patient.id}</td>
             <td>{patient.name}</td>
             <td>{effectString}</td>
