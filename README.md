@@ -3,7 +3,7 @@
 ![checkpoint demo](./final-project.png)
 
 
-You've recently been hired as a new physician's assistant at Westin Hills Psychiatric Hospital in Springwood, Ohio. They've been running clinical trials on a new drug called Hypnocil. The FDA has deemed Hypnocil as an experimental treatment that is effective for management of psychotic disorders. It's used For sedation where dreamless sleep is considered optimal.
+You've recently been hired as a new physician's assistant at Westin Hills Psychiatric Hospital in Springwood, Ohio. They've been running clinical trials on a new drug called Hypnocil. The FDA has deemed Hypnocil as an experimental treatment that is effective for management of psychotic disorders. It's used for sedation where dreamless sleep is considered optimal.
 
 The patients are adolescents that are suffering extreme and troubling night terrors of a severely burned man wearing a red and green sweater with long knives as claws.
 
