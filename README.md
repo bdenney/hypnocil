@@ -1,12 +1,13 @@
 # Hypnocil Clinical Trials
 
-TODO: Image
+![checkpoint demo](./final-project.png)
 
-You've recently been hired as a new physician's assistant at Westin Hills Psychiatric Hospital. They've been running clinical trials on a new drug called Hypnocil. The patients are adolescents that are suffering extreme and troubling nightmares of a severely burned man wearing a red and green sweater with long knives as claws.
+
+You've recently been hired as a new physician's assistant at Westin Hills Psychiatric Hospital in Springwood, Ohio. They've been running clinical trials on a new drug called Hypnocil. The FDA has deemed Hypnocil as an experimental treatment that is effective for management of psychotic disorders. It's used For sedation where dreamless sleep is considered optimal.
+
+The patients are adolescents that are suffering extreme and troubling night terrors of a severely burned man wearing a red and green sweater with long knives as claws.
 
 Having been through Flatiron School you've been tasked with creating a web portal to track any side effects being experienced by the patients.
-
-_FDA CLASSIFICATION: Experimental. Effective for management of psychotic disorders. For sedation where dreamless sleep is considered optimal; suppression of night terror._
 
 ## Instructions
 
@@ -19,7 +20,7 @@ Part of what this code challenge is testing is your ability to follow given inst
 
 1. Run `npm install` in your terminal.
 2. Run `json-server --watch src/db.json`. This will run your backend on port `3000`.
-3. In a new terminal, run `npm start`. This will run your React app on port `3001`. You may be asked whether you want to run react on another port. Type 'y' and it should open the page.
+3. In a new terminal, run `npm start`. You may be asked whether you want to run react on another port. Type 'y' and it should open the page.
 
 Make sure to open [http://localhost:3000/patients](http://localhost:3000/patients) in the browser to verify that your backend is working before you proceed!
 
